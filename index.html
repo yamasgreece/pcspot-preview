@@ -3,250 +3,262 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>PC Spot Ιωάννινα — Υπολογιστές, επισκευές &amp; custom PC | Σακελλαρίου 1</title>
-<meta name="description" content="PC Spot Ιωάννινα: κατάστημα υπολογιστών στη Σακελλαρίου 1. Laptop &amp; desktop, εξαρτήματα, δίκτυα, custom gaming PC, επισκευές &amp; αναβαθμίσεις. Δωρεάν μεταφορικά άνω των 50€. Τηλ. 26510 23013.">
+<title>PC Spot Ιωάννινα — Υπολογιστές, custom builds &amp; επισκευές | Σακελλαρίου 1</title>
+<meta name="description" content="PC Spot Ιωάννινα: κατάστημα υπολογιστών στη Σακελλαρίου 1. Laptop, desktop, εξαρτήματα, δίκτυα, custom gaming PC, επισκευές &amp; αναβαθμίσεις. Δωρεάν μεταφορικά άνω των 50€. Τηλ. 26510 23013.">
 <link rel="canonical" href="https://pcspot.gr/">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#0a0e1a">
+<meta name="theme-color" content="#07070f">
 <meta name="author" content="PC Spot Ιωάννινα">
-
-<!-- Open Graph -->
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="PC Spot Ιωάννινα">
 <meta property="og:locale" content="el_GR">
-<meta property="og:title" content="PC Spot Ιωάννινα — Υπολογιστές, επισκευές &amp; custom PC">
+<meta property="og:title" content="PC Spot Ιωάννινα — Υπολογιστές, custom builds &amp; επισκευές">
 <meta property="og:description" content="Κατάστημα υπολογιστών στα Ιωάννινα. Laptop, desktop, εξαρτήματα, δίκτυα, custom builds &amp; επισκευές. Σακελλαρίου 1, τηλ. 26510 23013.">
 <meta property="og:url" content="https://pcspot.gr/">
 <meta name="twitter:card" content="summary_large_image">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0a0e1a; --bg2:#0f1526; --card:#141b30; --line:#20293f;
-  --ink:#eef2fb; --mut:#9aa6c4; --accent:#3ee0c9; --accent2:#5b8cff;
-  --glow:0 0 40px rgba(62,224,201,.18);
-  --max:1180px;
+  --bg:#07070f; --surface:rgba(255,255,255,.04); --surface2:rgba(255,255,255,.06);
+  --line:rgba(255,255,255,.09); --ink:#f4f5ff; --mut:#a6a8c4;
+  --v1:#7c5cff; --v2:#22d3ee; --v3:#ff5ca8; --amber:#ffb547;
+  --r:22px;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
-h1,h2,h3,.disp{font-family:Sora,system-ui,sans-serif;letter-spacing:-.02em;line-height:1.1}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;line-height:1.55;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+body::before{content:"";position:fixed;inset:0;z-index:-2;background:
+  radial-gradient(720px 520px at 82% -8%,rgba(124,92,255,.30),transparent 60%),
+  radial-gradient(680px 520px at -6% 12%,rgba(34,211,238,.20),transparent 60%),
+  radial-gradient(700px 600px at 60% 108%,rgba(255,92,168,.16),transparent 60%),var(--bg)}
+body::after{content:"";position:fixed;inset:0;z-index:-1;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:64px 64px;opacity:.35;mask-image:radial-gradient(circle at 50% 20%,#000,transparent 80%)}
+h1,h2,h3,.disp{font-family:"Space Grotesk",system-ui,sans-serif;letter-spacing:-.03em;line-height:1.02}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:var(--max);margin:0 auto;padding:0 22px}
-.accent{color:var(--accent)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
+.grad{background:linear-gradient(100deg,var(--v2),var(--v1) 55%,var(--v3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
 
 /* header */
-header{position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(10,14,26,.72);border-bottom:1px solid var(--line)}
-.nav{display:flex;align-items:center;justify-content:space-between;height:68px}
-.logo{display:flex;align-items:center;gap:10px;font-family:Sora;font-weight:800;font-size:20px}
-.logo .dot{width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:var(--glow)}
-.menu{display:flex;gap:28px;font-size:15px;font-weight:500}
-.menu a{color:var(--mut);transition:color .2s}
+header{position:sticky;top:0;z-index:60;backdrop-filter:blur(16px);background:rgba(7,7,15,.6);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;justify-content:space-between;height:66px}
+.logo{display:flex;align-items:center;gap:11px;font-family:"Space Grotesk";font-weight:700;font-size:19px}
+.logo .mark{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--v1),var(--v2));display:grid;place-items:center;font-size:15px;box-shadow:0 6px 22px rgba(124,92,255,.5)}
+.menu{display:flex;gap:26px;font-size:14.5px;font-weight:500}
+.menu a{color:var(--mut);transition:.2s}
 .menu a:hover{color:var(--ink)}
-.callbtn{display:inline-flex;align-items:center;gap:8px;background:var(--accent);color:#04120f;font-weight:700;padding:10px 18px;border-radius:999px;font-family:Sora;font-size:14px;transition:transform .15s,box-shadow .2s}
-.callbtn:hover{transform:translateY(-1px);box-shadow:var(--glow)}
-.burger{display:none;background:none;border:0;color:var(--ink);font-size:26px;cursor:pointer}
+.cta-top{display:inline-flex;align-items:center;gap:8px;background:var(--ink);color:#07070f;font-weight:600;padding:9px 17px;border-radius:999px;font-size:14px;transition:.18s}
+.cta-top:hover{transform:translateY(-1px);box-shadow:0 10px 30px rgba(255,255,255,.14)}
 
 /* hero */
-.hero{position:relative;padding:96px 0 84px;overflow:hidden}
-.hero::before{content:"";position:absolute;inset:0;background:
-  radial-gradient(600px 400px at 78% 12%,rgba(91,140,255,.20),transparent 60%),
-  radial-gradient(560px 420px at 12% 90%,rgba(62,224,201,.16),transparent 60%);pointer-events:none}
-.grid-bg{position:absolute;inset:0;background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:52px 52px;opacity:.15;mask-image:radial-gradient(circle at 50% 30%,#000,transparent 75%)}
-.hero .wrap{position:relative}
-.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid var(--line);background:var(--card);color:var(--mut);padding:6px 14px;border-radius:999px;font-size:13px;font-weight:500;margin-bottom:22px}
-.pill b{color:var(--accent)}
-.hero h1{font-size:clamp(34px,6vw,60px);font-weight:800;max-width:15ch}
-.hero p.lead{color:var(--mut);font-size:clamp(16px,2.2vw,20px);max-width:52ch;margin:20px 0 30px}
-.cta{display:flex;gap:14px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:9px;padding:14px 24px;border-radius:12px;font-family:Sora;font-weight:700;font-size:15px;transition:transform .15s,box-shadow .2s,background .2s}
-.btn-p{background:linear-gradient(135deg,var(--accent),#37c9e0);color:#04120f}
-.btn-p:hover{transform:translateY(-2px);box-shadow:var(--glow)}
-.btn-s{border:1px solid var(--line);background:var(--card);color:var(--ink)}
-.btn-s:hover{border-color:var(--accent);color:var(--accent)}
-.trust{display:flex;gap:26px;flex-wrap:wrap;margin-top:40px;color:var(--mut);font-size:14px}
-.trust span{display:flex;align-items:center;gap:8px}
-.trust b{color:var(--ink);font-family:Sora}
+.hero{padding:86px 0 40px;position:relative}
+.badge{display:inline-flex;align-items:center;gap:9px;border:1px solid var(--line);background:var(--surface);padding:7px 15px;border-radius:999px;font-size:13px;color:var(--mut);margin-bottom:26px}
+.badge .live{width:8px;height:8px;border-radius:50%;background:#38f5a8;box-shadow:0 0 12px #38f5a8;animation:pulse 2s infinite}
+@keyframes pulse{50%{opacity:.4}}
+.hero h1{font-size:clamp(42px,7.4vw,86px);font-weight:700;max-width:16ch}
+.hero .sub{color:var(--mut);font-size:clamp(16px,2vw,20px);max-width:50ch;margin:24px 0 32px}
+.hero-cta{display:flex;gap:13px;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:9px;padding:15px 26px;border-radius:14px;font-family:"Space Grotesk";font-weight:600;font-size:15.5px;transition:.18s;border:1px solid transparent}
+.btn-p{background:linear-gradient(135deg,var(--v1),var(--v2));color:#07070f}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 16px 44px rgba(124,92,255,.42)}
+.btn-g{background:var(--surface);border-color:var(--line);color:var(--ink)}
+.btn-g:hover{border-color:rgba(255,255,255,.28)}
 
-/* sections */
-section{padding:78px 0}
-.eyebrow{color:var(--accent);font-family:Sora;font-weight:700;font-size:13px;letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
-.sec-h{font-size:clamp(26px,4vw,40px);font-weight:800;max-width:20ch}
-.sec-sub{color:var(--mut);max-width:56ch;margin-top:14px;font-size:17px}
+/* marquee */
+.marquee{margin-top:54px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:18px 0;overflow:hidden;position:relative;-webkit-mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent);mask-image:linear-gradient(90deg,transparent,#000 12%,#000 88%,transparent)}
+.mtrack{display:flex;gap:56px;width:max-content;animation:scroll 26s linear infinite;font-family:"Space Grotesk";font-weight:600;font-size:19px;color:var(--mut);opacity:.85}
+.mtrack span{white-space:nowrap}
+@keyframes scroll{to{transform:translateX(-50%)}}
 
-/* categories */
-.cats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:44px}
-.cat{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:26px 22px;transition:transform .2s,border-color .2s,background .2s;position:relative;overflow:hidden}
-.cat:hover{transform:translateY(-4px);border-color:var(--accent);background:#182136}
-.cat .ic{font-size:30px;margin-bottom:14px;display:block}
-.cat h3{font-size:18px;font-weight:700;margin-bottom:6px}
-.cat p{color:var(--mut);font-size:14px}
+/* bento */
+section{padding:64px 0}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;margin-bottom:30px;flex-wrap:wrap}
+.sh h2{font-size:clamp(28px,4.4vw,46px);font-weight:700;max-width:16ch}
+.sh p{color:var(--mut);max-width:38ch;font-size:15.5px}
+.bento{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;grid-auto-rows:minmax(150px,auto)}
+.tile{position:relative;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:26px;overflow:hidden;transition:.22s;display:flex;flex-direction:column;justify-content:space-between}
+.tile:hover{transform:translateY(-4px);border-color:rgba(255,255,255,.22);background:var(--surface2)}
+.tile .ic{font-size:26px}
+.tile h3{font-family:"Space Grotesk";font-size:19px;font-weight:600;margin-top:auto}
+.tile p{color:var(--mut);font-size:13.5px;margin-top:5px}
+.tile.link::after{content:"↗";position:absolute;top:22px;right:22px;color:var(--mut);opacity:0;transition:.2s}
+.tile.link:hover::after{opacity:1;transform:translate(2px,-2px)}
+.c6{grid-column:span 6}.c4{grid-column:span 4}.c3{grid-column:span 3}.c2{grid-column:span 2}
+/* feature tiles */
+.feat{background:linear-gradient(140deg,rgba(124,92,255,.22),rgba(34,211,238,.10));border-color:rgba(124,92,255,.35);min-height:300px}
+.feat .kicker{font-family:"Space Grotesk";font-weight:600;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--v2)}
+.feat h3{font-size:30px;line-height:1.05;margin:12px 0}
+.feat p{font-size:15px;max-width:34ch}
+.feat .spec{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.chip{border:1px solid var(--line);background:rgba(0,0,0,.25);border-radius:999px;padding:6px 12px;font-size:12.5px;color:var(--ink);font-family:"Space Grotesk"}
+.glow{position:absolute;width:280px;height:280px;border-radius:50%;filter:blur(70px);opacity:.5;pointer-events:none}
 
 /* services */
-.serv{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:44px}
-.scard{background:linear-gradient(180deg,var(--card),var(--bg2));border:1px solid var(--line);border-radius:18px;padding:30px 26px}
-.scard .num{font-family:Sora;font-weight:800;font-size:14px;color:var(--accent);letter-spacing:.1em}
-.scard h3{font-size:20px;font-weight:700;margin:12px 0 10px}
-.scard p{color:var(--mut);font-size:15px}
+.serv{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.scard{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:26px;transition:.2s}
+.scard:hover{transform:translateY(-4px);background:var(--surface2);border-color:rgba(255,255,255,.2)}
+.scard .n{font-family:"Space Grotesk";font-weight:700;font-size:13px;color:var(--v2);letter-spacing:.1em}
+.scard h3{font-family:"Space Grotesk";font-size:19px;font-weight:600;margin:10px 0 8px}
+.scard p{color:var(--mut);font-size:14px}
 
-/* why band */
-.band{background:linear-gradient(135deg,var(--bg2),#0c1120);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.why{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:44px}
-.why .w{text-align:center}
-.why .w .big{font-family:Sora;font-weight:800;font-size:34px;background:linear-gradient(135deg,var(--accent),var(--accent2));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-.why .w p{color:var(--mut);font-size:14px;margin-top:6px}
-
-/* store / contact */
-.store{display:grid;grid-template-columns:1fr 1fr;gap:34px;align-items:center}
-.store .info h3{font-size:22px;font-weight:700;margin-bottom:18px}
-.info ul{list-style:none;display:grid;gap:16px}
-.info li{display:flex;gap:14px;align-items:flex-start}
-.info li .k{color:var(--accent);font-size:20px;flex:0 0 26px}
-.info li b{display:block;font-family:Sora;font-weight:600}
-.info li span{color:var(--mut);font-size:15px}
-.map{border-radius:18px;overflow:hidden;border:1px solid var(--line);min-height:340px;filter:grayscale(.2) contrast(1.05)}
-.map iframe{width:100%;height:100%;min-height:340px;border:0;display:block}
+/* stats + store bento */
+.mix{display:grid;grid-template-columns:repeat(6,1fr);gap:16px;grid-auto-rows:minmax(120px,auto)}
+.stat{border:1px solid var(--line);border-radius:var(--r);background:var(--surface);padding:24px;display:flex;flex-direction:column;justify-content:center}
+.stat .big{font-family:"Space Grotesk";font-weight:700;font-size:40px}
+.stat p{color:var(--mut);font-size:13.5px;margin-top:4px}
+.storecard{grid-column:span 3;grid-row:span 2;border:1px solid var(--line);border-radius:var(--r);overflow:hidden;background:var(--surface);display:flex;flex-direction:column}
+.storecard .map{flex:1;min-height:210px}
+.storecard iframe{width:100%;height:100%;min-height:210px;border:0;display:block;filter:grayscale(.25) contrast(1.05)}
+.storecard .binfo{padding:22px}
+.storecard .binfo h3{font-family:"Space Grotesk";font-size:20px;font-weight:600;margin-bottom:12px}
+.storecard .binfo div{display:flex;gap:10px;font-size:14px;color:var(--mut);margin-bottom:8px}
+.storecard .binfo b{color:var(--ink);font-weight:500}
+.ctacard{grid-column:span 3;border:1px solid rgba(34,211,238,.34);border-radius:var(--r);background:linear-gradient(140deg,rgba(34,211,238,.16),rgba(124,92,255,.14));padding:28px;display:flex;flex-direction:column;justify-content:center;gap:14px}
+.ctacard h3{font-family:"Space Grotesk";font-size:26px;font-weight:700}
+.ctacard p{color:var(--mut);font-size:14.5px}
 
 /* faq */
-.faq{max-width:820px;margin:44px auto 0}
-details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:4px 22px;margin-bottom:12px}
-details summary{cursor:pointer;font-family:Sora;font-weight:600;font-size:17px;padding:18px 0;list-style:none;display:flex;justify-content:space-between;align-items:center}
-details summary::-webkit-details-marker{display:none}
-details summary::after{content:"+";color:var(--accent);font-size:24px;font-weight:400}
+.faq{max-width:840px;margin:0 auto}
+details{border:1px solid var(--line);border-radius:16px;background:var(--surface);padding:2px 22px;margin-bottom:11px}
+summary{cursor:pointer;font-family:"Space Grotesk";font-weight:600;font-size:16.5px;padding:17px 0;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:14px}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";color:var(--v2);font-size:22px}
 details[open] summary::after{content:"–"}
-details p{color:var(--mut);padding:0 0 20px;font-size:15px}
+details p{color:var(--mut);padding:0 0 18px;font-size:14.5px}
 
 /* footer */
-footer{background:#070a13;border-top:1px solid var(--line);padding:56px 0 34px}
-.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:36px}
-.fgrid h4{font-family:Sora;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--mut);margin-bottom:16px}
-.fgrid a{display:block;color:var(--mut);font-size:14px;padding:5px 0;transition:color .2s}
-.fgrid a:hover{color:var(--accent)}
-.fbrand p{color:var(--mut);font-size:14px;max-width:38ch;margin-top:12px}
-.copy{border-top:1px solid var(--line);margin-top:36px;padding-top:22px;color:var(--mut);font-size:13px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px}
+footer{border-top:1px solid var(--line);padding:52px 0 30px;margin-top:30px}
+.fgrid{display:grid;grid-template-columns:2fr 1fr 1fr;gap:34px}
+.fgrid h4{font-family:"Space Grotesk";font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut);margin-bottom:14px}
+.fgrid a{display:block;color:var(--mut);font-size:14px;padding:5px 0;transition:.2s}
+.fgrid a:hover{color:var(--v2)}
+.fbrand p{color:var(--mut);font-size:14px;max-width:34ch;margin-top:12px}
+.copy{border-top:1px solid var(--line);margin-top:34px;padding-top:20px;color:var(--mut);font-size:12.5px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 
-@media(max-width:880px){
-  .menu,.trust b~span{display:none}
-  .burger{display:block}
-  .cats,.serv,.why,.store,.fgrid{grid-template-columns:1fr 1fr}
-  .store,.fgrid{grid-template-columns:1fr}
+@media(max-width:920px){
+  .menu{display:none}
+  .bento,.mix{grid-template-columns:repeat(4,1fr)}
+  .c6{grid-column:span 4}.c4{grid-column:span 4}.c3{grid-column:span 2}.c2{grid-column:span 2}
+  .storecard,.ctacard{grid-column:span 4}
+  .serv{grid-template-columns:1fr 1fr}
+  .fgrid{grid-template-columns:1fr 1fr}
 }
-@media(max-width:560px){.cats,.serv,.why{grid-template-columns:1fr}}
+@media(max-width:560px){
+  .bento,.mix{grid-template-columns:repeat(2,1fr)}
+  .c6,.c4{grid-column:span 2}.c3,.c2{grid-column:span 1}
+  .storecard,.ctacard{grid-column:span 2}
+  .serv,.fgrid{grid-template-columns:1fr}
+}
+@media(prefers-reduced-motion:reduce){.mtrack{animation:none}.badge .live{animation:none}}
 </style>
 </head>
 <body>
 
 <header>
   <div class="wrap nav">
-    <a href="#" class="logo"><span class="dot"></span>PC&nbsp;Spot</a>
+    <a href="#" class="logo"><span class="mark">▲</span>PC&nbsp;Spot</a>
     <nav class="menu">
-      <a href="#categories">Προϊόντα</a>
+      <a href="#shop">Προϊόντα</a>
       <a href="#services">Υπηρεσίες</a>
-      <a href="#store">Το κατάστημα</a>
-      <a href="#faq">Συχνές ερωτήσεις</a>
+      <a href="#store">Κατάστημα</a>
+      <a href="#faq">FAQ</a>
       <a href="https://pcspot.gr/eshop/">Eshop</a>
     </nav>
-    <a href="tel:+302651023013" class="callbtn">📞 26510 23013</a>
+    <a href="tel:+302651023013" class="cta-top">📞 26510 23013</a>
   </div>
 </header>
 
 <section class="hero">
-  <div class="grid-bg"></div>
   <div class="wrap">
-    <span class="pill">📍 Ιωάννινα · Σακελλαρίου 1 <b>·</b> από το 2005 στην τεχνολογία</span>
-    <h1>Ο υπολογιστής σου, <span class="accent">στα χέρια ειδικών.</span></h1>
-    <p class="lead">Laptop, desktop, εξαρτήματα και δίκτυα — αλλά και custom gaming builds, αναβαθμίσεις και επισκευές από ανθρώπους που ξέρουν το μηχάνημά σου με το όνομά του. Στα Ιωάννινα, δίπλα σου.</p>
-    <div class="cta">
-      <a href="tel:+302651023013" class="btn btn-p">📞 Κάλεσέ μας τώρα</a>
-      <a href="#categories" class="btn btn-s">Δες τις κατηγορίες →</a>
+    <span class="badge"><span class="live"></span> Ιωάννινα · Σακελλαρίου 1 · ανοιχτά σήμερα</span>
+    <h1>Η τεχνολογία σου, <span class="grad">στημένη σωστά.</span></h1>
+    <p class="sub">Laptop, desktop, εξαρτήματα και δίκτυα — μαζί με custom gaming builds, αναβαθμίσεις και επισκευές από ανθρώπους που ξέρουν το μηχάνημά σου με τ' όνομά του.</p>
+    <div class="hero-cta">
+      <a href="https://pcspot.gr/eshop/" class="btn btn-p">Δες το eshop →</a>
+      <a href="tel:+302651023013" class="btn btn-g">📞 Κάλεσέ μας</a>
     </div>
-    <div class="trust">
-      <span><b>Δωρεάν</b> μεταφορικά &gt; 50€</span>
-      <span><b>Same-day</b> αποστολή</span>
-      <span><b>Τοπικό</b> service &amp; υποστήριξη</span>
+    <div class="marquee">
+      <div class="mtrack">
+        <span>INTEL</span><span>· AMD</span><span>· NVIDIA</span><span>· ASUS</span><span>· MSI</span><span>· LOGITECH</span><span>· CORSAIR</span><span>· SAMSUNG</span><span>· WESTERN DIGITAL</span><span>· TP-LINK</span>
+        <span>INTEL</span><span>· AMD</span><span>· NVIDIA</span><span>· ASUS</span><span>· MSI</span><span>· LOGITECH</span><span>· CORSAIR</span><span>· SAMSUNG</span><span>· WESTERN DIGITAL</span><span>· TP-LINK</span>
+      </div>
     </div>
   </div>
 </section>
 
-<section id="categories">
+<section id="shop">
   <div class="wrap">
-    <div class="eyebrow">Τι θα βρεις</div>
-    <h2 class="sec-h">Όλη η τεχνολογία, σε ένα σημείο</h2>
-    <p class="sec-sub">Από ένα καλώδιο μέχρι ένα ολοκληρωμένο gaming rig. Επίλεξε κατηγορία και δες το πλήρες eshop.</p>
-    <div class="cats">
-      <a class="cat" href="https://pcspot.gr/eshop/"><span class="ic">💻</span><h3>Desktop &amp; Laptop</h3><p>Σταθεροί, φορητοί &amp; all-in-one για δουλειά και gaming.</p></a>
-      <a class="cat" href="https://pcspot.gr/eshop/"><span class="ic">🔧</span><h3>Εξαρτήματα PC</h3><p>Κάρτες γραφικών, επεξεργαστές, μνήμες, δίσκοι, τροφοδοτικά.</p></a>
-      <a class="cat" href="https://pcspot.gr/eshop/"><span class="ic">🖱️</span><h3>Περιφερειακά</h3><p>Πληκτρολόγια, ποντίκια, οθόνες, εκτυπωτές, webcams.</p></a>
-      <a class="cat" href="https://pcspot.gr/eshop/"><span class="ic">🌐</span><h3>Δίκτυα</h3><p>Routers, switches, Wi-Fi, καλωδιώσεις &amp; NAS.</p></a>
-      <a class="cat" href="https://pcspot.gr/eshop/"><span class="ic">🎧</span><h3>Ήχος &amp; Εικόνα</h3><p>Ηχεία, ακουστικά, projectors &amp; αξεσουάρ.</p></a>
-      <a class="cat" href="https://pcspot.gr/eshop/"><span class="ic">💽</span><h3>Software</h3><p>Λειτουργικά, antivirus &amp; άδειες λογισμικού.</p></a>
-      <a class="cat" href="https://pcspot.gr/eshop/"><span class="ic">🎒</span><h3>Αξεσουάρ Laptop</h3><p>Τσάντες, docking, φορτιστές, βάσεις &amp; ψύξη.</p></a>
-      <a class="cat" href="https://pcspot.gr/eshop/"><span class="ic">🏷️</span><h3>Προσφορές</h3><p>Επιλεγμένα προϊόντα σε ειδικές τιμές, κάθε εβδομάδα.</p></a>
+    <div class="sh">
+      <h2>Όλη η τεχνολογία, <span class="grad">σε ένα σημείο</span></h2>
+      <p>Από ένα καλώδιο μέχρι ένα ολοκληρωμένο gaming rig. Επίλεξε και δες το πλήρες eshop.</p>
+    </div>
+    <div class="bento">
+      <a href="https://pcspot.gr/eshop/" class="tile feat c4" style="grid-row:span 2">
+        <span class="glow" style="background:var(--v1);top:-60px;right:-40px"></span>
+        <div><div class="kicker">Custom Builds</div><h3>Το gaming PC των ονείρων σου, φτιαγμένο στα μέτρα σου.</h3><p>Μας λες τι θέλεις να τρέχεις κι εμείς επιλέγουμε τα σωστά μέρη, στη σωστή τιμή — δοκιμασμένο και έτοιμο.</p></div>
+        <div class="spec"><span class="chip">Ryzen / Intel</span><span class="chip">RTX / Radeon</span><span class="chip">NVMe SSD</span><span class="chip">Custom cooling</span></div>
+      </a>
+      <a href="https://pcspot.gr/eshop/" class="tile link c2"><span class="ic">💻</span><h3>Desktop &amp; Laptop</h3><p>Σταθεροί, φορητοί &amp; all-in-one.</p></a>
+      <a href="https://pcspot.gr/eshop/" class="tile link c2"><span class="ic">🔧</span><h3>Εξαρτήματα PC</h3><p>GPU, CPU, RAM, δίσκοι, PSU.</p></a>
+      <a href="https://pcspot.gr/eshop/" class="tile link c2"><span class="ic">🌐</span><h3>Δίκτυα</h3><p>Routers, switches, Wi-Fi, NAS.</p></a>
+      <a href="https://pcspot.gr/eshop/" class="tile link c2"><span class="ic">🖱️</span><h3>Περιφερειακά</h3><p>Οθόνες, πληκτρολόγια, εκτυπωτές.</p></a>
+      <a href="https://pcspot.gr/eshop/" class="tile link c2"><span class="ic">🎧</span><h3>Ήχος &amp; Εικόνα</h3><p>Ηχεία, ακουστικά, projectors.</p></a>
+      <a href="https://pcspot.gr/eshop/" class="tile link c2"><span class="ic">💽</span><h3>Software</h3><p>Λειτουργικά, antivirus, άδειες.</p></a>
+      <a href="https://pcspot.gr/eshop/" class="tile link c2"><span class="ic">🎒</span><h3>Αξεσουάρ Laptop</h3><p>Τσάντες, docks, φορτιστές.</p></a>
+      <a href="https://pcspot.gr/eshop/" class="tile feat c2" style="border-color:rgba(255,181,71,.4);background:linear-gradient(140deg,rgba(255,181,71,.2),rgba(255,92,168,.1))"><span class="glow" style="background:var(--amber);bottom:-70px;left:-30px"></span><div><div class="kicker" style="color:var(--amber)">Special</div><h3 style="font-size:22px">Προσφορές</h3></div><p>Επιλεγμένα προϊόντα σε ειδικές τιμές, κάθε εβδομάδα.</p></a>
     </div>
   </div>
 </section>
 
 <section id="services">
   <div class="wrap">
-    <div class="eyebrow">Υπηρεσίες</div>
-    <h2 class="sec-h">Δεν πουλάμε μόνο κουτιά — τα στήνουμε, τα φτιάχνουμε, τα κρατάμε ζωντανά</h2>
+    <div class="sh">
+      <h2>Δεν πουλάμε μόνο κουτιά — <span class="grad">τα κρατάμε ζωντανά</span></h2>
+      <p>Service, αναβαθμίσεις και υποστήριξη που τη βρίσκεις με ένα τηλέφωνο.</p>
+    </div>
     <div class="serv">
-      <div class="scard"><div class="num">01</div><h3>Custom PC Builds</h3><p>Μας λες τι θέλεις να τρέξεις κι εμείς σχεδιάζουμε το μηχάνημα — gaming, video editing ή γραφείο, με τα σωστά μέρη στη σωστή τιμή.</p></div>
-      <div class="scard"><div class="num">02</div><h3>Επισκευές &amp; διάγνωση</h3><p>Laptop που δεν ανοίγει, αργό PC, χαλασμένη οθόνη ή δίσκος. Διάγνωση, ανταλλακτικά και επισκευή με εγγύηση εργασίας.</p></div>
-      <div class="scard"><div class="num">03</div><h3>Αναβαθμίσεις</h3><p>SSD, μνήμη, κάρτα γραφικών, καθαρισμός &amp; θερμικά. Δώσε δεύτερη ζωή στο μηχάνημα που ήδη έχεις.</p></div>
-      <div class="scard"><div class="num">04</div><h3>Δίκτυα &amp; Wi-Fi</h3><p>Σετάρισμα δικτύου σπιτιού ή επιχείρησης, κάλυψη Wi-Fi, καλωδιώσεις και ασφάλεια.</p></div>
-      <div class="scard"><div class="num">05</div><h3>Μεταφορά δεδομένων</h3><p>Ασφαλής μεταφορά αρχείων &amp; backup σε νέο υπολογιστή, χωρίς να χάσεις τίποτα.</p></div>
-      <div class="scard"><div class="num">06</div><h3>Τεχνική υποστήριξη</h3><p>Είμαστε εδώ και μετά την αγορά — με συμβουλή, ρύθμιση και υποστήριξη που τη βρίσκεις με ένα τηλέφωνο.</p></div>
+      <div class="scard"><div class="n">01</div><h3>Επισκευές &amp; διάγνωση</h3><p>Laptop που δεν ανοίγει, αργό PC, χαλασμένη οθόνη ή δίσκος — με εγγύηση εργασίας.</p></div>
+      <div class="scard"><div class="n">02</div><h3>Αναβαθμίσεις</h3><p>SSD, μνήμη, κάρτα γραφικών, θερμικά. Δεύτερη ζωή στο μηχάνημα που ήδη έχεις.</p></div>
+      <div class="scard"><div class="n">03</div><h3>Δίκτυα &amp; Wi-Fi</h3><p>Σετάρισμα δικτύου σπιτιού/επιχείρησης, κάλυψη Wi-Fi, καλωδιώσεις, ασφάλεια.</p></div>
+      <div class="scard"><div class="n">04</div><h3>Μεταφορά δεδομένων</h3><p>Ασφαλής μεταφορά αρχείων &amp; backup σε νέο υπολογιστή, χωρίς απώλειες.</p></div>
+      <div class="scard"><div class="n">05</div><h3>Καθαρισμός &amp; συντήρηση</h3><p>Σκόνη, θερμοκρασίες, βελτιστοποίηση απόδοσης για να τρέχει σαν καινούριο.</p></div>
+      <div class="scard"><div class="n">06</div><h3>Τεχνική υποστήριξη</h3><p>Είμαστε εδώ και μετά την αγορά — συμβουλή, ρύθμιση, λύση.</p></div>
     </div>
   </div>
 </section>
 
-<div class="band">
-  <section>
-    <div class="wrap">
-      <div class="eyebrow">Γιατί PC Spot</div>
-      <h2 class="sec-h">Τοπικό κατάστημα, με γνώση που δεν βρίσκεις online</h2>
-      <div class="why">
-        <div class="w"><div class="big">20+</div><p>χρόνια στην τεχνολογία των Ιωαννίνων</p></div>
-        <div class="w"><div class="big">0€</div><p>μεταφορικά για παραγγελίες άνω των 50€</p></div>
-        <div class="w"><div class="big">Same-day</div><p>αποστολή για διαθέσιμα προϊόντα</p></div>
-        <div class="w"><div class="big">1-on-1</div><p>συμβουλή από άνθρωπο, όχι από chatbot</p></div>
+<section>
+  <div class="wrap">
+    <div class="mix">
+      <div class="stat c3"><div class="big grad">Same-day</div><p>αποστολή για διαθέσιμα προϊόντα</p></div>
+      <div class="storecard" id="store">
+        <div class="map"><iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="PC Spot Ιωάννινα - Χάρτης" src="https://maps.google.com/maps?q=39.664492,20.848180&hl=el&z=16&output=embed"></iframe></div>
+        <div class="binfo">
+          <h3>Πέρνα από το κατάστημα</h3>
+          <div>📍 <b>Σακελλαρίου 1, 45333 Ιωάννινα</b></div>
+          <div>🕘 <b>Δευτ–Παρ 10:00–20:00 · Σάβ 12:00–16:00</b></div>
+          <div>📞 <b><a href="tel:+302651023013">26510 23013</a></b></div>
+        </div>
+      </div>
+      <div class="stat c3"><div class="big grad">0€</div><p>μεταφορικά για παραγγελίες άνω των 50€</p></div>
+      <div class="ctacard">
+        <h3>Χρειάζεσαι βοήθεια <span class="grad">με το μηχάνημά σου;</span></h3>
+        <p>Πάρε μας τηλέφωνο ή πέρνα από το μαγαζί — σε εξυπηρετούμε άνθρωπος με άνθρωπο.</p>
+        <a href="tel:+302651023013" class="btn btn-p" style="align-self:flex-start">📞 26510 23013</a>
       </div>
     </div>
-  </section>
-</div>
-
-<section id="store">
-  <div class="wrap store">
-    <div class="info">
-      <div class="eyebrow">Το κατάστημα</div>
-      <h2 class="sec-h" style="margin-bottom:22px">Πέρνα από το μαγαζί</h2>
-      <ul>
-        <li><span class="k">📍</span><div><b>Διεύθυνση</b><span>Σακελλαρίου 1, 45333 Ιωάννινα</span></div></li>
-        <li><span class="k">📞</span><div><b>Τηλέφωνο</b><span><a href="tel:+302651023013">26510 23013</a></span></div></li>
-        <li><span class="k">🕘</span><div><b>Ωράριο</b><span>Δευτέρα–Παρασκευή 10:00–20:00<br>Σάββατο 12:00–16:00</span></div></li>
-        <li><span class="k">🛒</span><div><b>Online</b><span><a href="https://pcspot.gr/eshop/">Αγόρασε από το eshop →</a></span></div></li>
-      </ul>
-    </div>
-    <div class="map">
-      <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=39.664492,20.848180&hl=el&z=16&output=embed" title="PC Spot Ιωάννινα - Χάρτης"></iframe>
-    </div>
   </div>
 </section>
 
-<section id="faq" style="padding-top:20px">
+<section id="faq">
   <div class="wrap">
-    <div class="eyebrow" style="text-align:center">Συχνές ερωτήσεις</div>
-    <h2 class="sec-h" style="text-align:center;margin:0 auto">Ό,τι ρωτάτε πιο συχνά</h2>
+    <div class="sh" style="justify-content:center;text-align:center"><h2 style="margin:0 auto">Συχνές <span class="grad">ερωτήσεις</span></h2></div>
     <div class="faq">
-      <details open><summary>Πού βρίσκεται το PC Spot;</summary><p>Το κατάστημα βρίσκεται στη Σακελλαρίου 1, στο κέντρο των Ιωαννίνων (Τ.Κ. 45333). Εξυπηρετούμε όλο τον νομό Ιωαννίνων και αποστέλλουμε πανελλαδικά μέσω του eshop.</p></details>
-      <details><summary>Επισκευάζετε laptop και desktop;</summary><p>Ναι. Κάνουμε διάγνωση, αντικατάσταση ανταλλακτικών, καθαρισμό, αναβαθμίσεις (SSD, μνήμη, κάρτα γραφικών) και εγκατάσταση λειτουργικού, τόσο για σταθερούς όσο και για φορητούς υπολογιστές.</p></details>
-      <details><summary>Φτιάχνετε custom υπολογιστές για gaming;</summary><p>Φυσικά. Μας λες τι παιχνίδια ή προγράμματα θέλεις να τρέχεις και τον προϋπολογισμό σου, κι εμείς προτείνουμε και συναρμολογούμε το ιδανικό μηχάνημα, δοκιμασμένο και έτοιμο για χρήση.</p></details>
-      <details><summary>Έχετε δωρεάν μεταφορικά;</summary><p>Ναι, οι παραγγελίες άνω των 50€ έχουν δωρεάν μεταφορικά. Για διαθέσιμα προϊόντα γίνεται αυθημερόν αποστολή, ενώ μπορείς να κάνεις και δωρεάν παραλαβή από το κατάστημα.</p></details>
-      <details><summary>Ποιο είναι το ωράριο λειτουργίας;</summary><p>Δευτέρα έως Παρασκευή 10:00–20:00 και Σάββατο 12:00–16:00. Για οτιδήποτε, καλέστε μας στο 26510 23013.</p></details>
+      <details open><summary>Πού βρίσκεται το PC Spot;</summary><p>Στη Σακελλαρίου 1, στο κέντρο των Ιωαννίνων (Τ.Κ. 45333). Εξυπηρετούμε όλο τον νομό Ιωαννίνων και αποστέλλουμε πανελλαδικά μέσω του eshop.</p></details>
+      <details><summary>Επισκευάζετε laptop και desktop;</summary><p>Ναι. Διάγνωση, ανταλλακτικά, καθαρισμό, αναβαθμίσεις (SSD, μνήμη, κάρτα γραφικών) και εγκατάσταση λειτουργικού, για σταθερούς και φορητούς.</p></details>
+      <details><summary>Φτιάχνετε custom υπολογιστές για gaming;</summary><p>Φυσικά. Μας λες τι θέλεις να τρέχεις και τον προϋπολογισμό σου, κι εμείς προτείνουμε και συναρμολογούμε το ιδανικό μηχάνημα, δοκιμασμένο και έτοιμο.</p></details>
+      <details><summary>Έχετε δωρεάν μεταφορικά;</summary><p>Ναι, για παραγγελίες άνω των 50€. Αυθημερόν αποστολή για διαθέσιμα προϊόντα και δωρεάν παραλαβή από το κατάστημα.</p></details>
+      <details><summary>Ποιο είναι το ωράριο λειτουργίας;</summary><p>Δευτέρα–Παρασκευή 10:00–20:00 και Σάββατο 12:00–16:00. Τηλέφωνο: 26510 23013.</p></details>
     </div>
   </div>
 </section>
@@ -255,74 +267,21 @@ footer{background:#070a13;border-top:1px solid var(--line);padding:56px 0 34px}
   <div class="wrap">
     <div class="fgrid">
       <div class="fbrand">
-        <a href="#" class="logo"><span class="dot"></span>PC&nbsp;Spot</a>
+        <a href="#" class="logo"><span class="mark">▲</span>PC&nbsp;Spot</a>
         <p>Το κατάστημα υπολογιστών των Ιωαννίνων. Προϊόντα, custom builds, επισκευές και τεχνική υποστήριξη από ανθρώπους που ξέρουν την τεχνολογία.</p>
       </div>
-      <div>
-        <h4>Πλοήγηση</h4>
-        <a href="#categories">Προϊόντα</a>
-        <a href="#services">Υπηρεσίες</a>
-        <a href="#store">Το κατάστημα</a>
-        <a href="https://pcspot.gr/eshop/">Eshop</a>
-      </div>
-      <div>
-        <h4>Επικοινωνία</h4>
-        <a href="tel:+302651023013">📞 26510 23013</a>
-        <a href="https://maps.google.com/maps?q=39.664492,20.848180">📍 Σακελλαρίου 1, Ιωάννινα</a>
-        <a href="https://pcspot.gr/eshop/index.php?route=information/contact">✉️ Φόρμα επικοινωνίας</a>
-      </div>
+      <div><h4>Πλοήγηση</h4><a href="#shop">Προϊόντα</a><a href="#services">Υπηρεσίες</a><a href="#store">Κατάστημα</a><a href="https://pcspot.gr/eshop/">Eshop</a></div>
+      <div><h4>Επικοινωνία</h4><a href="tel:+302651023013">📞 26510 23013</a><a href="https://maps.google.com/maps?q=39.664492,20.848180">📍 Σακελλαρίου 1, Ιωάννινα</a><a href="https://pcspot.gr/eshop/index.php?route=information/contact">✉️ Φόρμα επικοινωνίας</a></div>
     </div>
-    <div class="copy">
-      <span>© 2026 PC Spot Ιωάννινα. Με επιφύλαξη παντός δικαιώματος.</span>
-      <span>Σακελλαρίου 1 · 45333 Ιωάννινα · Τηλ. 26510 23013</span>
-    </div>
+    <div class="copy"><span>© 2026 PC Spot Ιωάννινα</span><span>Σακελλαρίου 1 · 45333 Ιωάννινα · Τηλ. 26510 23013</span></div>
   </div>
 </footer>
 
-<!-- Structured data: LocalBusiness / ComputerStore -->
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"ComputerStore",
-  "@id":"https://pcspot.gr/#store",
-  "name":"PC Spot Ιωάννινα",
-  "url":"https://pcspot.gr/",
-  "telephone":"+302651023013",
-  "priceRange":"€€",
-  "image":"https://pcspot.gr/og.jpg",
-  "address":{
-    "@type":"PostalAddress",
-    "streetAddress":"Σακελλαρίου 1",
-    "addressLocality":"Ιωάννινα",
-    "postalCode":"45333",
-    "addressCountry":"GR"
-  },
-  "geo":{"@type":"GeoCoordinates","latitude":39.664492,"longitude":20.848180},
-  "openingHoursSpecification":[
-    {"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"20:00"},
-    {"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"16:00"}
-  ],
-  "areaServed":{"@type":"City","name":"Ιωάννινα"},
-  "makesOffer":[
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Custom PC builds"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Επισκευή υπολογιστών & laptop"}},
-    {"@type":"Offer","itemOffered":{"@type":"Service","name":"Αναβαθμίσεις & δίκτυα"}}
-  ]
-}
+{"@context":"https://schema.org","@type":"ComputerStore","@id":"https://pcspot.gr/#store","name":"PC Spot Ιωάννινα","url":"https://pcspot.gr/","telephone":"+302651023013","priceRange":"€€","image":"https://pcspot.gr/og.jpg","address":{"@type":"PostalAddress","streetAddress":"Σακελλαρίου 1","addressLocality":"Ιωάννινα","postalCode":"45333","addressCountry":"GR"},"geo":{"@type":"GeoCoordinates","latitude":39.664492,"longitude":20.848180},"openingHoursSpecification":[{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday"],"opens":"10:00","closes":"20:00"},{"@type":"OpeningHoursSpecification","dayOfWeek":"Saturday","opens":"12:00","closes":"16:00"}],"areaServed":{"@type":"City","name":"Ιωάννινα"},"makesOffer":[{"@type":"Offer","itemOffered":{"@type":"Service","name":"Custom PC builds"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Επισκευή υπολογιστών & laptop"}},{"@type":"Offer","itemOffered":{"@type":"Service","name":"Αναβαθμίσεις & δίκτυα"}}]}
 </script>
 <script type="application/ld+json">
-{
-  "@context":"https://schema.org",
-  "@type":"FAQPage",
-  "mainEntity":[
-    {"@type":"Question","name":"Πού βρίσκεται το PC Spot;","acceptedAnswer":{"@type":"Answer","text":"Στη Σακελλαρίου 1, στο κέντρο των Ιωαννίνων (Τ.Κ. 45333). Εξυπηρετούμε τον νομό Ιωαννίνων και αποστέλλουμε πανελλαδικά μέσω του eshop."}},
-    {"@type":"Question","name":"Επισκευάζετε laptop και desktop;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Διάγνωση, ανταλλακτικά, καθαρισμό, αναβαθμίσεις SSD/μνήμης/κάρτας γραφικών και εγκατάσταση λειτουργικού για σταθερούς και φορητούς υπολογιστές."}},
-    {"@type":"Question","name":"Φτιάχνετε custom υπολογιστές για gaming;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Με βάση τις ανάγκες και τον προϋπολογισμό σου προτείνουμε και συναρμολογούμε το ιδανικό μηχάνημα, δοκιμασμένο και έτοιμο για χρήση."}},
-    {"@type":"Question","name":"Έχετε δωρεάν μεταφορικά;","acceptedAnswer":{"@type":"Answer","text":"Ναι, για παραγγελίες άνω των 50€. Γίνεται αυθημερόν αποστολή για διαθέσιμα προϊόντα και δωρεάν παραλαβή από το κατάστημα."}},
-    {"@type":"Question","name":"Ποιο είναι το ωράριο λειτουργίας;","acceptedAnswer":{"@type":"Answer","text":"Δευτέρα–Παρασκευή 10:00–20:00 και Σάββατο 12:00–16:00. Τηλέφωνο: 26510 23013."}}
-  ]
-}
+{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Πού βρίσκεται το PC Spot;","acceptedAnswer":{"@type":"Answer","text":"Στη Σακελλαρίου 1, στο κέντρο των Ιωαννίνων (Τ.Κ. 45333). Εξυπηρετούμε τον νομό Ιωαννίνων και αποστέλλουμε πανελλαδικά μέσω του eshop."}},{"@type":"Question","name":"Επισκευάζετε laptop και desktop;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Διάγνωση, ανταλλακτικά, καθαρισμό, αναβαθμίσεις SSD/μνήμης/κάρτας γραφικών και εγκατάσταση λειτουργικού."}},{"@type":"Question","name":"Φτιάχνετε custom υπολογιστές για gaming;","acceptedAnswer":{"@type":"Answer","text":"Ναι. Με βάση τις ανάγκες και τον προϋπολογισμό σου προτείνουμε και συναρμολογούμε το ιδανικό μηχάνημα."}},{"@type":"Question","name":"Έχετε δωρεάν μεταφορικά;","acceptedAnswer":{"@type":"Answer","text":"Ναι, για παραγγελίες άνω των 50€. Αυθημερόν αποστολή για διαθέσιμα προϊόντα και δωρεάν παραλαβή από το κατάστημα."}},{"@type":"Question","name":"Ποιο είναι το ωράριο λειτουργίας;","acceptedAnswer":{"@type":"Answer","text":"Δευτέρα–Παρασκευή 10:00–20:00 και Σάββατο 12:00–16:00. Τηλέφωνο: 26510 23013."}}]}
 </script>
-
 </body>
 </html>
